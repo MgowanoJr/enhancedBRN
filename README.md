@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/hisptz/star-rating-reports.svg?branch=master)](https://travis-ci.org/hisptz/star-rating-reports)
 [![Maintainability](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/maintainability)](https://codeclimate.com/github/MgowanoJr/enhancedBRN/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/test_coverage)](https://codeclimate.com/github/MgowanoJr/enhancedBRN/test_coverage)
+
 
 # Angular DHIS2 based seed app
 
