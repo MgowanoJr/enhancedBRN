@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/hisptz/ngx-seed-app.svg?branch=master)](https://travis-ci.org/hisptz/ngx-seed-app)
-[![Maintainability](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/maintainability)](https://codeclimate.com/github/hisptz/ngx-seed-app/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/test_coverage)](https://codeclimate.com/github/hisptz/ngx-seed-app/test_coverage)
+[![Build Status](https://travis-ci.org/hisptz/star-rating-reports.svg?branch=master)](https://travis-ci.org/hisptz/star-rating-reports)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/maintainability)](https://codeclimate.com/github/hisptz/star-rating-reports/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/test_coverage)](https://codeclimate.com/github/hisptz/star-rating-reports/test_coverage)
 
 # Angular DHIS2 based seed app
 
@@ -17,13 +17,13 @@ Boilerplate codes to fast track developing DHIS2 applications based on Angular f
 Clone repository
 
 ```bash
- git clone https://github.com/hisptz/ngx-seed-app.git
+ git clone https://github.com/hisptz/star-rating-reports.git
 ```
 
 Navigate to application root folder
 
 ```bash
-cd ngx-seed-app
+cd star-rating-reports
 ```
 
 Install all required dependencies for the app

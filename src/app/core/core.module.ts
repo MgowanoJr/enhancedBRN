@@ -4,15 +4,15 @@ import {
   SkipSelf,
   ModuleWithProviders,
   APP_INITIALIZER
-} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+} from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 import {
   Dhis2ApiService,
   IndexDbServiceConfig,
   IndexDbService
-} from './services';
-
+} from "./services";
+// import { modules } from "./modules";
 export function initialize(dhis2ApiService: Dhis2ApiService) {
   return () => dhis2ApiService.initialize();
 }
@@ -42,7 +42,7 @@ export class CoreModule {
     parentModule: CoreModule
   ) {
     if (parentModule) {
-      throw new Error('CoreModule is already loaded. Import only in AppModule');
+      throw new Error("CoreModule is already loaded. Import only in AppModule");
     }
   }
 

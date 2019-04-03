@@ -1,10 +1,10 @@
 {
-  "name": "ngx-seed-app",
+  "name": "star-rating-reports",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot && cd dist/ngx-seed-app && zip -r -D ngx-seed-app.zip .",
+    "build": "ng build --prod --aot && cd dist/star-rating-reports && zip -r -D star-rating-reports.zip .",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -25,7 +25,7 @@
     "@angular/router": "^7.2.7",
     "@angular/service-worker": "^7.2.7",
     "@hisptz/ngx-dhis2-http-client": "^1.0.4",
-    "@hisptz/ngx-dhis2-menu": "^1.0.7",
+    "@hisptz/ngx-dhis2-menu": "^1.0.8",
     "@ngrx/effects": "^7.3.0",
     "@ngrx/entity": "^7.3.0",
     "@ngrx/router-store": "^7.3.0",

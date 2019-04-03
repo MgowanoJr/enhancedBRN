@@ -1,0 +1,86 @@
+<div
+  class="selection-filter-container"
+  appClickOutside
+  (clickOutside)="onClickOutside()"
+>
+  <!--selection filter header-->
+  <div class="selection-filter-header">
+    <button
+      class="selection-filter-btn filter-control-btn"
+      (click)="toggleFilters($event)"
+      [title]="'Filter by different dimensions' | translate"
+    >
+      FILTER
+    </button>
+    <div class="selection-filter-btn-list" *ngIf="showFilters">
+      <!--period filter button-->
+      <button
+        [disabled]="saving"
+        *ngIf="filterConfig?.showPeriodFilter"
+        [ngClass]="{
+          'selection-filter-btn': true,
+          'active-filter': selectedFilter === 'PERIOD'
+        }"
+        [title]="'Filter by period' | translate"
+        (click)="toggleCurrentFilter($event, 'PERIOD')"
+      >
+        <img [src]="periodIcon" alt="" />&nbsp;{{ "Period" | translate }}&nbsp;
+        <img
+          [ngClass]="{ 'arrow-up': selectedFilter === 'PERIOD' }"
+          [src]="arrowDownIcon"
+          alt=""
+        />
+      </button>
+      <!--end of period filter button-->
+
+      <!--org unit filter button-->
+      <button
+        [disabled]="saving"
+        *ngIf="filterConfig?.showOrgUnitFilter"
+        [ngClass]="{
+          'selection-filter-btn': true,
+          'active-filter': selectedFilter === 'ORG_UNIT'
+        }"
+        [title]="'Filter by organisation unit' | translate"
+        (click)="toggleCurrentFilter($event, 'ORG_UNIT')"
+      >
+        <img [src]="orgUnitIcon" alt="" />&nbsp;{{
+          "Org-Unit" | translate
+        }}&nbsp;
+        <img
+          [ngClass]="{ 'arrow-up': selectedFilter === 'ORG_UNIT' }"
+          [src]="arrowDownIcon"
+          alt=""
+        />
+      </button>
+
+      <!--end of org unit filter button-->
+    </div>
+  </div>
+  <!--end of selection filter header-->
+
+  <!--selection filter body-->
+  <div
+    class="selection-filter-body"
+    *ngIf="selectedFilter !== '' && showFilterBody"
+  >
+    <!--period filter-->
+    <app-period-filter
+      *ngIf="selectedFilter === 'PERIOD'"
+      [selectedPeriods]="selectedPeriods"
+      (periodFilterClose)="onFilterClose($event, 'PERIOD')"
+      (periodFilterUpdate)="onFilterUpdate($event, 'PERIOD')"
+    ></app-period-filter>
+    <!--end of period filter-->
+
+    <!--org unit filter-->
+    <ngx-dhis2-org-unit-filter
+      *ngIf="selectedFilter === 'ORG_UNIT'"
+      [selectedOrgUnitItems]="selectedOrgUnits"
+      (orgUnitClose)="onFilterClose($event, 'ORG_UNIT')"
+      (orgUnitUpdate)="onFilterUpdate($event, 'ORG_UNIT')"
+    ></ngx-dhis2-org-unit-filter>
+    <!--end of org unit filter-->
+  </div>
+  <!--end of selection filter body-->
+</div>
