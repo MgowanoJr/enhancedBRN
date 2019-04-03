@@ -2,9 +2,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/dbe97dbdfbd55344c38f/maintainability)](https://codeclimate.com/github/MgowanoJr/enhancedBRN/maintainability)
 
 
-# Angular DHIS2 based seed app
+# Star Rating Reports App
 
-Boilerplate codes to fast track developing DHIS2 applications based on Angular framework
+Application for generating all Star Rating Reports on dhis web apps.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Boilerplate codes to fast track developing DHIS2 applications based on Angular f
 Clone repository
 
 ```bash
- git clone https://github.com/hisptz/star-rating-reports.git
+ git clone https://github.com/hisptz/enhancedBRN.git star-rating-reports
 ```
 
 Navigate to application root folder
